@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --fix .",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc.json"
   },
   "dependencies": {
     "next": "10.0.9",
@@ -15,6 +17,25 @@
   "devDependencies": {
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.23.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1",
     "typescript": "^4.2.3"
-  }
+  },
+  "description": "Example of NextJS Form with FaunaDB Database",
+  "main": "index.tsx",
+  "repository": "https://github.com/viniciusbmello/simpleform-faunadb.git",
+  "author": "<viniciusbmello@gmail.com>",
+  "license": "MIT"
 }
